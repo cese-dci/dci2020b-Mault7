@@ -19,7 +19,7 @@ U 1 1 5F8C1E62
 P 1500 6400
 F 0 "D1" H 1500 6183 50  0000 C CNN
 F 1 "1N4004" H 1500 6274 50  0000 C CNN
-F 2 "Diode_THT:D_A-405_P7.62mm_Horizontal" H 1500 6400 50  0001 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal" H 1500 6400 50  0001 C CNN
 F 3 "~" H 1500 6400 50  0001 C CNN
 	1    1500 6400
 	-1   0    0    1   
@@ -65,11 +65,7 @@ Wire Wire Line
 	2000 6600 2000 6400
 Connection ~ 2000 6400
 Wire Wire Line
-	2000 6400 2350 6400
-Wire Wire Line
 	3300 6600 3300 6400
-Wire Wire Line
-	3300 6400 2950 6400
 $Comp
 L power:GND #PWR03
 U 1 1 5F8CC670
@@ -114,8 +110,6 @@ F 3 "" H 3300 7150 50  0001 C CNN
 	1    3300 7150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1050 6600 1050 7150
 Wire Wire Line
 	2000 6900 2000 7150
 Wire Wire Line
@@ -226,32 +220,32 @@ Connection ~ 5450 6400
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5F8EF2AF
-P 7600 6300
-F 0 "J5" H 7680 6342 50  0000 L CNN
-F 1 "Conn_01x03" H 7680 6251 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7600 6300 50  0001 C CNN
-F 3 "~" H 7600 6300 50  0001 C CNN
-	1    7600 6300
+P 8000 6300
+F 0 "J5" H 8080 6342 50  0000 L CNN
+F 1 "Conn_01x03" H 8080 6251 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8000 6300 50  0001 C CNN
+F 3 "~" H 8000 6300 50  0001 C CNN
+	1    8000 6300
 	1    0    0    -1  
 $EndComp
-Text Label 7250 5700 2    50   ~ 0
+Text Label 7650 5700 2    50   ~ 0
 +5V_EXT
-Text Label 6750 5700 2    50   ~ 0
+Text Label 7150 5700 2    50   ~ 0
 +5V
-Text Label 6250 5700 2    50   ~ 0
+Text Label 6450 5700 2    50   ~ 0
 +5V_USB
 Wire Wire Line
-	7400 6200 7250 6200
+	7800 6200 7650 6200
 Wire Wire Line
-	7250 6200 7250 5700
+	7650 6200 7650 5700
 Wire Wire Line
-	7400 6300 6750 6300
+	7800 6300 7150 6300
 Wire Wire Line
-	6750 6300 6750 5700
+	7150 6300 7150 5700
 Wire Wire Line
-	6250 5700 6250 6400
+	6450 5700 6450 6400
 Wire Wire Line
-	6250 6400 7400 6400
+	6450 6400 7800 6400
 $Comp
 L MCU_Microchip_PIC18:PIC18F4550-IP U3
 U 1 1 5F8FC29E
@@ -487,21 +481,6 @@ Wire Wire Line
 	4600 2700 4400 2700
 Wire Wire Line
 	4400 2800 4600 2800
-$Comp
-L power:GND #PWR06
-U 1 1 5F9AE0CD
-P 2900 4500
-F 0 "#PWR06" H 2900 4250 50  0001 C CNN
-F 1 "GND" H 2905 4327 50  0000 C CNN
-F 2 "" H 2900 4500 50  0001 C CNN
-F 3 "" H 2900 4500 50  0001 C CNN
-	1    2900 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4600 3000 2900 3000
-Wire Wire Line
-	2900 3000 2900 4500
 Text Label 4400 3800 2    50   ~ 0
 PIN10
 Text Label 4400 3700 2    50   ~ 0
@@ -551,8 +530,6 @@ Wire Wire Line
 	3650 3500 4600 3500
 Text Label 3350 3400 2    50   ~ 0
 +5V_USB
-Wire Wire Line
-	3350 3400 3350 3900
 $Comp
 L power:GND #PWR09
 U 1 1 5FA9FB89
@@ -564,15 +541,6 @@ F 3 "" H 4400 4550 50  0001 C CNN
 	1    4400 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4400 4550 4400 4300
-Wire Wire Line
-	4400 4200 3950 4200
-Wire Wire Line
-	3950 4300 4400 4300
-Connection ~ 4400 4300
-Wire Wire Line
-	4400 4300 4400 4200
 $Comp
 L Device:Crystal Y1
 U 1 1 5FAE70EA
@@ -596,9 +564,9 @@ F 3 "" H 8250 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8500 4350 8250 4350
+	8550 4350 8250 4350
 Wire Wire Line
-	8000 4350 7950 4300
+	7950 4350 7950 4300
 Wire Wire Line
 	7950 4000 7950 3850
 Wire Wire Line
@@ -609,7 +577,7 @@ Wire Wire Line
 	8250 4350 8250 4650
 Connection ~ 8250 4350
 Wire Wire Line
-	8250 4350 8000 4350
+	8250 4350 7950 4350
 Wire Wire Line
 	6800 3000 8550 3000
 Wire Wire Line
@@ -626,7 +594,7 @@ U 1 1 5FB11DC5
 P 9600 4900
 F 0 "D3" V 9639 4782 50  0000 R CNN
 F 1 "LED_RUN" V 9548 4782 50  0000 R CNN
-F 2 "LED_THT:LED_D3.0mm_Clear" H 9600 4900 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 9600 4900 50  0001 C CNN
 F 3 "~" H 9600 4900 50  0001 C CNN
 	1    9600 4900
 	0    -1   -1   0   
@@ -785,7 +753,7 @@ F 3 "~" H 7950 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8550 4300 8500 4350
+	8550 4300 8550 4350
 Wire Wire Line
 	8550 3850 8550 4000
 $Comp
@@ -805,7 +773,7 @@ U 1 1 5FB11207
 P 9150 4900
 F 0 "D2" V 9189 4979 50  0000 L CNN
 F 1 "LED_POWER" V 9098 4979 50  0000 L CNN
-F 2 "LED_THT:LED_D3.0mm_Clear" H 9150 4900 50  0001 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 9150 4900 50  0001 C CNN
 F 3 "~" H 9150 4900 50  0001 C CNN
 	1    9150 4900
 	0    -1   -1   0   
@@ -823,12 +791,8 @@ F 3 "~" H 800 6460 50  0001 C CNN
 $EndComp
 Text Notes 850  5900 0    70   ~ 0
 Conexion Jack con voltage regulado a 5V
-Text Notes 3700 5900 0    70   ~ 0
+Text Notes 4100 5900 0    70   ~ 0
 Voltage regulado con salida a 3.3V
-Wire Wire Line
-	1450 950  1650 950 
-Text Label 1650 950  0    50   ~ 0
-RESET
 Connection ~ 2550 2050
 Wire Wire Line
 	2550 1450 2550 2050
@@ -935,4 +899,86 @@ Text Notes 11100 4550 2    70   ~ 0
 Boton de reinicio\n del micro\n 
 Text Notes 10250 6200 2    70   ~ 0
 Indicadores led de arranque y poder
+Wire Wire Line
+	2950 6400 3300 6400
+Wire Wire Line
+	2900 3000 4600 3000
+$Comp
+L power:GND #PWR0101
+U 1 1 5F8FF478
+P 2900 4500
+F 0 "#PWR0101" H 2900 4250 50  0001 C CNN
+F 1 "GND" H 2905 4327 50  0000 C CNN
+F 2 "" H 2900 4500 50  0001 C CNN
+F 3 "" H 2900 4500 50  0001 C CNN
+	1    2900 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 950  2550 1450
+Wire Wire Line
+	1450 950  2550 950 
+Connection ~ 2550 1450
+Wire Wire Line
+	1050 6600 1050 7150
+Wire Wire Line
+	4400 4200 4400 4300
+Wire Wire Line
+	3950 4200 4400 4200
+Wire Wire Line
+	3950 4300 4400 4300
+Connection ~ 4400 4300
+Wire Wire Line
+	4400 4300 4400 4550
+Wire Wire Line
+	3350 3400 3350 3900
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F9A1DEC
+P 2300 6100
+F 0 "#FLG0101" H 2300 6175 50  0001 C CNN
+F 1 "PWR_FLAG" H 2300 6273 50  0000 C CNN
+F 2 "" H 2300 6100 50  0001 C CNN
+F 3 "~" H 2300 6100 50  0001 C CNN
+	1    2300 6100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 6100 2300 6400
+Wire Wire Line
+	2000 6400 2300 6400
+Connection ~ 2300 6400
+Wire Wire Line
+	2300 6400 2350 6400
+$Comp
+L Device:CP1 C7
+U 1 1 5F9C7313
+P 2900 3800
+F 0 "C7" H 3015 3846 50  0000 L CNN
+F 1 "220nF" H 3015 3755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_Tantal_D5.0mm_P5.00mm" H 2900 3800 50  0001 C CNN
+F 3 "~" H 2900 3800 50  0001 C CNN
+	1    2900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3000 2900 3650
+Wire Wire Line
+	2900 4500 2900 3950
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5F8B7931
+P 6800 5700
+F 0 "#FLG0103" H 6800 5775 50  0001 C CNN
+F 1 "PWR_FLAG" H 6800 5873 50  0000 C CNN
+F 2 "" H 6800 5700 50  0001 C CNN
+F 3 "~" H 6800 5700 50  0001 C CNN
+	1    6800 5700
+	1    0    0    -1  
+$EndComp
+Connection ~ 7150 6300
+Wire Wire Line
+	6800 6300 7150 6300
+Wire Wire Line
+	6800 5700 6800 6300
 $EndSCHEMATC
