@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Pinguino-PIC-CESE-DCI"
+Title "REPLICA-PLACA-PINGUINO-PIC"
 Date "2020-10-09"
-Rev ""
-Comp "Jose Mauricio Lara Tapia"
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Rev "1.0"
+Comp ""
+Comment1 "Author: Ing. Jose Mauricio Lara Tapia"
+Comment2 "Reviewer: Raul Alejandro Camacho Dorado"
+Comment3 "Licencia BSD (proyecto CIAA), GPL o OHL (Cern"
 Comment4 ""
 $EndDescr
 $Comp
@@ -223,7 +223,7 @@ U 1 1 5F8EF2AF
 P 8000 6300
 F 0 "J5" H 8080 6342 50  0000 L CNN
 F 1 "Conn_01x03" H 8080 6251 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 8000 6300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8000 6300 50  0001 C CNN
 F 3 "~" H 8000 6300 50  0001 C CNN
 	1    8000 6300
 	1    0    0    -1  
@@ -981,4 +981,48 @@ Wire Wire Line
 	6800 6300 7150 6300
 Wire Wire Line
 	6800 5700 6800 6300
+$Comp
+L Connector_Generic:Conn_01x04 J7
+U 1 1 5FA12738
+P 2250 3850
+F 0 "J7" H 2330 3842 50  0000 L CNN
+F 1 "Conn_01x04" H 2330 3751 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2250 3850 50  0001 C CNN
+F 3 "~" H 2250 3850 50  0001 C CNN
+	1    2250 3850
+	1    0    0    -1  
+$EndComp
+Text Label 1800 3600 0    50   ~ 0
+V_JACK
+$Comp
+L power:GND #PWR0102
+U 1 1 5FA3CE9A
+P 1800 4300
+F 0 "#PWR0102" H 1800 4050 50  0001 C CNN
+F 1 "GND" H 1805 4127 50  0000 C CNN
+F 2 "" H 1800 4300 50  0001 C CNN
+F 3 "" H 1800 4300 50  0001 C CNN
+	1    1800 4300
+	1    0    0    -1  
+$EndComp
+Text Label 950  3600 0    50   ~ 0
++3.3V
+Wire Wire Line
+	1800 3600 1800 3750
+Wire Wire Line
+	1800 3750 2050 3750
+Wire Wire Line
+	950  3600 950  3950
+Wire Wire Line
+	950  3950 2050 3950
+Wire Wire Line
+	1800 4300 1800 4050
+Wire Wire Line
+	1800 4050 2050 4050
+Text Label 1450 3600 0    50   ~ 0
++5V
+Wire Wire Line
+	1450 3600 1450 3850
+Wire Wire Line
+	1450 3850 2050 3850
 $EndSCHEMATC
