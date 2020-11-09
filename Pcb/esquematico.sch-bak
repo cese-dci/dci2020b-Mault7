@@ -4,13 +4,13 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Pinguino-PIC(REPLICA)"
+Title "REPLICA-PLACA-PINGUINO-PIC"
 Date "2020-10-09"
-Rev ""
-Comp "Jose Mauricio Lara Tapia"
-Comment1 ""
-Comment2 ""
-Comment3 ""
+Rev "1.0"
+Comp ""
+Comment1 "Author: Ing. Jose Mauricio Lara Tapia"
+Comment2 "Reviewer: Raul Alejandro Camacho Dorado"
+Comment3 "Licencia BSD (proyecto CIAA), GPL o OHL (Cern"
 Comment4 ""
 $EndDescr
 $Comp
@@ -521,13 +521,9 @@ F 3 " ~" H 3700 4150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4600 3400 3550 3400
-Wire Wire Line
 	3550 3400 3550 3900
 Wire Wire Line
 	3650 3900 3650 3500
-Wire Wire Line
-	3650 3500 4600 3500
 Text Label 3350 3400 2    50   ~ 0
 +5V_USB
 $Comp
@@ -1025,4 +1021,54 @@ Wire Wire Line
 	1450 3600 1450 3850
 Wire Wire Line
 	1450 3850 2050 3850
+Wire Wire Line
+	4600 3400 3550 3400
+Wire Wire Line
+	3650 3500 4600 3500
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5FAA90BD
+P 7750 1650
+F 0 "H1" H 7850 1696 50  0000 L CNN
+F 1 "MountingHole" H 7850 1605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7750 1650 50  0001 C CNN
+F 3 "~" H 7750 1650 50  0001 C CNN
+	1    7750 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5FAAAF9C
+P 8600 1650
+F 0 "H3" H 8700 1696 50  0000 L CNN
+F 1 "MountingHole" H 8700 1605 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8600 1650 50  0001 C CNN
+F 3 "~" H 8600 1650 50  0001 C CNN
+	1    8600 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5FAB45A7
+P 7750 1950
+F 0 "H2" H 7850 1996 50  0000 L CNN
+F 1 "MountingHole" H 7850 1905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7750 1950 50  0001 C CNN
+F 3 "~" H 7750 1950 50  0001 C CNN
+	1    7750 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5FABDE4C
+P 8600 1950
+F 0 "H4" H 8700 1996 50  0000 L CNN
+F 1 "MountingHole" H 8700 1905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8600 1950 50  0001 C CNN
+F 3 "~" H 8600 1950 50  0001 C CNN
+	1    8600 1950
+	1    0    0    -1  
+$EndComp
+Text Notes 8100 1400 0    50   ~ 0
+AGUJEROS DE SUJECION
 $EndSCHEMATC
